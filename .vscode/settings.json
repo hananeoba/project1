@@ -1,3 +1,4 @@
 {
-  "cmake.sourceDirectory": "/home/hanane/projects/flutter_projects/project1/linux"
+  "cmake.sourceDirectory": "/home/hanane/projects/flutter_projects/project1/linux",
+  "java.compile.nullAnalysis.mode": "automatic"
 }

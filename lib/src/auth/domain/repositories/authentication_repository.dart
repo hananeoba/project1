@@ -9,11 +9,13 @@ abstract class AuthenticationRepository {
       required String name,
       required String avatar});
 
-  ResultFuture<void> deleteUser({required int id});
   ResultFuture<List<User>> getUsers();
-  ResultFuture<void> updateUser(
+
+  ResultVoid updateUser(
       {required int id,
       required String createdAt,
       required String name,
       required String avatar});
+
+  ResultVoid deleteUser({required int id});
 }
