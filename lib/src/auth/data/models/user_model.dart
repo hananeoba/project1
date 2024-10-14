@@ -4,18 +4,20 @@ import 'package:project1/core/utils/typedef.dart';
 import 'package:project1/src/auth/domain/entities/user.dart';
 
 class UserModel extends User {
-  const UserModel(
-      {required super.id,
-      required super.createdAt,
-      required super.name,
-      required super.avatar});
+  const UserModel({
+    required super.createdAt,
+    required super.name,
+    required super.avatar,
+    required super.id,
+  });
 
   const UserModel.empty()
       : this(
-            avatar: 'empty string',
-            createdAt: 'empty string',
-            id: '0',
-            name: 'empty string');
+            createdAt: '2024-10-14T08:07:16.661Z',
+            name: 'Cesar Konopelski',
+            avatar:
+                'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/561.jpg',
+            id: '1');
 
   factory UserModel.fromJson(String source) =>
       UserModel.fromMap(jsonDecode(source) as DataMap);
