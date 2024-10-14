@@ -12,10 +12,10 @@ class User extends Equatable {
       : this(
             avatar: 'empty string',
             createdAt: 'empty string',
-            id: 0,
+            id: '0',
             name: 'empty string');
 
-  final int id;
+  final String id;
   final String createdAt;
   final String name;
   final String avatar;
